@@ -1,0 +1,12 @@
+<% content_for :title, "Editing userworkout" %>
+
+<h1>Editing userworkout</h1>
+
+<%= render "form", userworkout: @userworkout %>
+
+<br>
+
+<div>
+  <%= link_to "Show this userworkout", @userworkout %> |
+  <%= link_to "Back to userworkouts", userworkouts_path %>
+</div>
