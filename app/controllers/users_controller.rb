@@ -18,6 +18,10 @@ class UsersController < ApplicationController
   # GET /users/1/edit
   def edit
   end
+  def sign_out
+    reset_session
+    redirect_to root_path, notice: 'Signed out successfully.'
+  end
 
   # POST /users or /users.json
   def create
